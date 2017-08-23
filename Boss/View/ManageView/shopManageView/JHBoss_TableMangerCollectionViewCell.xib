@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JHBoss_TableMangerCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.1.4.2_icon_dirty table" translatesAutoresizingMaskIntoConstraints="NO" id="19j-Rw-rhs">
+                        <rect key="frame" x="62" y="10" width="49" height="49"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIV-cB-z5o">
+                        <rect key="frame" x="73.5" y="61" width="25.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.63137254901960782" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="春夏阁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egb-Zr-Faf">
+                        <rect key="frame" x="66" y="85.5" width="40" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.43137254901960786" green="0.43137254901960786" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hIV-cB-z5o" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="505-Vw-Alb"/>
+                <constraint firstItem="egb-Zr-Faf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="J2d-V6-fYG"/>
+                <constraint firstItem="19j-Rw-rhs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="cPq-lY-8ML"/>
+                <constraint firstItem="egb-Zr-Faf" firstAttribute="top" secondItem="hIV-cB-z5o" secondAttribute="bottom" constant="10" id="fDJ-5v-nLF"/>
+                <constraint firstItem="19j-Rw-rhs" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="tJD-hf-mrb"/>
+                <constraint firstItem="hIV-cB-z5o" firstAttribute="top" secondItem="19j-Rw-rhs" secondAttribute="bottom" constant="2" id="zXG-nf-8cH"/>
+            </constraints>
+            <size key="customSize" width="173" height="148"/>
+            <connections>
+                <outlet property="peopleLab" destination="hIV-cB-z5o" id="VQN-E5-5ye"/>
+                <outlet property="tableNameLab" destination="egb-Zr-Faf" id="S0e-pD-5dH"/>
+                <outlet property="tableTypeImagV" destination="19j-Rw-rhs" id="LhU-el-Fj6"/>
+            </connections>
+            <point key="canvasLocation" x="95.5" y="103"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="2.1.4.2_icon_dirty table" width="49" height="49"/>
+    </resources>
+</document>

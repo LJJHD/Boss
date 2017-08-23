@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JH_CustomTextView">
+            <connections>
+                <outlet property="placeholderLabel" destination="50D-T4-IfA" id="puG-8c-GkP"/>
+                <outlet property="residueCharacterLabel" destination="FrG-XE-upa" id="i8p-H2-Zhi"/>
+                <outlet property="textView" destination="w7b-pP-LIo" id="QfV-2J-k1F"/>
+                <outlet property="textViewBottomView" destination="iN0-l3-epB" id="ykp-1w-p0n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="128" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w7b-pP-LIo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrG-XE-upa">
+                    <rect key="frame" x="321.5" y="143" width="45.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="非必填" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50D-T4-IfA">
+                    <rect key="frame" x="4" y="8" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="w7b-pP-LIo" secondAttribute="trailing" id="Agk-90-ijj"/>
+                <constraint firstItem="w7b-pP-LIo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="F1I-2f-Hpq"/>
+                <constraint firstAttribute="trailing" secondItem="FrG-XE-upa" secondAttribute="trailing" constant="8" id="MDY-Kh-7s7"/>
+                <constraint firstItem="w7b-pP-LIo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lHs-Fh-NOQ"/>
+                <constraint firstItem="FrG-XE-upa" firstAttribute="top" secondItem="w7b-pP-LIo" secondAttribute="bottom" constant="8" id="m96-DS-oH1"/>
+                <constraint firstAttribute="bottom" secondItem="FrG-XE-upa" secondAttribute="bottom" constant="3" id="sXB-1q-bHl"/>
+                <constraint firstItem="50D-T4-IfA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="uZT-Ld-ESa"/>
+                <constraint firstItem="50D-T4-IfA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="yte-1q-lVx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="91.5" y="-208.5"/>
+        </view>
+    </objects>
+</document>

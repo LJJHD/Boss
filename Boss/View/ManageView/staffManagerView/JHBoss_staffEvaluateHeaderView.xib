@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JHBoss_staffEvaluateHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNY-RG-5XR" customClass="JHCRM_TagsView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxg-3F-40c">
+                    <rect key="frame" x="0.0" y="138" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="pvk-GZ-WAm"/>
+                    </constraints>
+                    <state key="normal" image="1.1_btn_dropdown_default"/>
+                    <connections>
+                        <action selector="showMore:" destination="iN0-l3-epB" eventType="touchUpInside" id="AHe-hn-sNU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yxg-3F-40c" firstAttribute="top" secondItem="BNY-RG-5XR" secondAttribute="bottom" id="1D2-mn-AiJ"/>
+                <constraint firstAttribute="bottom" secondItem="yxg-3F-40c" secondAttribute="bottom" id="388-My-qYx"/>
+                <constraint firstItem="yxg-3F-40c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3VG-jI-5Dp"/>
+                <constraint firstAttribute="trailing" secondItem="yxg-3F-40c" secondAttribute="trailing" id="7LR-1Q-B62"/>
+                <constraint firstItem="BNY-RG-5XR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gEd-pe-sBJ"/>
+                <constraint firstItem="BNY-RG-5XR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mQY-nt-NvU"/>
+                <constraint firstAttribute="trailing" secondItem="BNY-RG-5XR" secondAttribute="trailing" id="n5E-1I-duq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="showMoreBtn" destination="yxg-3F-40c" id="GUA-fP-crs"/>
+                <outlet property="tagsView" destination="BNY-RG-5XR" id="4tv-Q4-Zgn"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-189"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1.1_btn_dropdown_default" width="10" height="6"/>
+    </resources>
+</document>

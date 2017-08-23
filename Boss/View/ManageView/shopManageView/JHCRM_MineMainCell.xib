@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JHCRM_MineMainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.1_btn_dropdown" highlightedImage="JHCRM_MineMainCell" translatesAutoresizingMaskIntoConstraints="NO" id="16V-8N-jEq">
+                        <rect key="frame" x="299" y="16" width="6" height="10"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_wo_like" translatesAutoresizingMaskIntoConstraints="NO" id="14i-nt-I1z">
+                        <rect key="frame" x="10" y="0.0" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="14i-nt-I1z" secondAttribute="height" multiplier="1:1" id="qHe-4o-9du"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ZF-2S-JWo">
+                        <rect key="frame" x="0.0" y="43" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="IH4-7g-VSn"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的订单" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpS-fL-rLx">
+                        <rect key="frame" x="56.5" y="13" width="59.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14.5"/>
+                        <color key="textColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="751" text="dddd" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjf-qR-mdm">
+                        <rect key="frame" x="271" y="13" width="34" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Se6-LT-OnF">
+                        <rect key="frame" x="248" y="5" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="EbR-To-xlS"/>
+                            <constraint firstAttribute="height" constant="32" id="RQO-xY-9ST"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="14i-nt-I1z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EiK-hi-uvO"/>
+                    <constraint firstItem="16V-8N-jEq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ihc-GF-dm5"/>
+                    <constraint firstItem="wpS-fL-rLx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JQT-Tp-I9b"/>
+                    <constraint firstAttribute="trailing" secondItem="qjf-qR-mdm" secondAttribute="trailing" constant="15" id="LjB-4G-WHd"/>
+                    <constraint firstAttribute="trailing" secondItem="16V-8N-jEq" secondAttribute="trailing" constant="15" id="Nj2-Cb-790"/>
+                    <constraint firstItem="0ZF-2S-JWo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Pxn-7g-VN2"/>
+                    <constraint firstItem="Se6-LT-OnF" firstAttribute="centerY" secondItem="wpS-fL-rLx" secondAttribute="centerY" id="RWT-th-7pO"/>
+                    <constraint firstAttribute="trailing" secondItem="0ZF-2S-JWo" secondAttribute="trailing" id="SpR-B0-bqG"/>
+                    <constraint firstItem="wpS-fL-rLx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WJX-3e-21b"/>
+                    <constraint firstItem="qjf-qR-mdm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wpS-fL-rLx" secondAttribute="trailing" constant="10" id="YbI-rY-Bn2"/>
+                    <constraint firstItem="wpS-fL-rLx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="57" id="Z8p-1R-TP1"/>
+                    <constraint firstItem="14i-nt-I1z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="bm7-Rw-a4x"/>
+                    <constraint firstAttribute="trailing" secondItem="Se6-LT-OnF" secondAttribute="trailing" constant="40" id="dWz-dq-qoM"/>
+                    <constraint firstItem="wpS-fL-rLx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="feu-t4-paU"/>
+                    <constraint firstItem="qjf-qR-mdm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gmp-ot-KBG"/>
+                    <constraint firstAttribute="bottom" secondItem="0ZF-2S-JWo" secondAttribute="bottom" id="iI3-Od-M2h"/>
+                    <constraint firstItem="0ZF-2S-JWo" firstAttribute="top" secondItem="14i-nt-I1z" secondAttribute="bottom" id="yiD-wW-Iyk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="InfoLbTralingLayout" destination="LjB-4G-WHd" id="6xT-Pj-7k4"/>
+                <outlet property="TitleLbleadingLayout" destination="Z8p-1R-TP1" id="tdK-78-xpW"/>
+                <outlet property="headerImageView" destination="Se6-LT-OnF" id="aZA-kx-iGl"/>
+                <outlet property="iconImageView" destination="14i-nt-I1z" id="sDq-y7-tnB"/>
+                <outlet property="infoLable" destination="qjf-qR-mdm" id="h8v-QF-S9F"/>
+                <outlet property="rightImageView" destination="16V-8N-jEq" id="stS-IA-wn8"/>
+                <outlet property="titleLabel" destination="wpS-fL-rLx" id="yHq-uF-bGm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1.1_btn_dropdown" width="6" height="10"/>
+        <image name="JHCRM_MineMainCell" width="16" height="16"/>
+        <image name="icon_wo_like" width="16" height="18"/>
+    </resources>
+</document>

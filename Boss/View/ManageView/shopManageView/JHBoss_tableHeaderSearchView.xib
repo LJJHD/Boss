@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JHBoss_tableHeaderSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bc9-5d-y56">
+                    <rect key="frame" x="15" y="10" width="345" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="18" placeholderIntrinsicHeight="22" image="2.1.3.6" translatesAutoresizingMaskIntoConstraints="NO" id="huV-fc-fub">
+                            <rect key="frame" x="15" y="6" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="Dpf-U6-Fro"/>
+                                <constraint firstAttribute="width" constant="18" id="ECv-ah-v4B"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Emb-C8-071"/>
+                        <constraint firstItem="huV-fc-fub" firstAttribute="leading" secondItem="bc9-5d-y56" secondAttribute="leading" constant="15" id="XFF-j3-1by"/>
+                        <constraint firstItem="huV-fc-fub" firstAttribute="centerY" secondItem="bc9-5d-y56" secondAttribute="centerY" id="Xfx-uo-ITS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入订单号、会员号或收银员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hrj-Nq-ck7">
+                    <rect key="frame" x="55" y="17.5" width="172.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.63137254901960782" green="0.63137254901960782" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bc9-5d-y56" secondAttribute="trailing" constant="15" id="Qs7-Vd-Ydk"/>
+                <constraint firstItem="bc9-5d-y56" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Z8B-8J-2IC"/>
+                <constraint firstItem="Hrj-Nq-ck7" firstAttribute="leading" secondItem="huV-fc-fub" secondAttribute="trailing" constant="7" id="kSb-be-dQz"/>
+                <constraint firstItem="Hrj-Nq-ck7" firstAttribute="centerY" secondItem="huV-fc-fub" secondAttribute="centerY" id="sok-zY-cSD"/>
+                <constraint firstItem="bc9-5d-y56" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="utm-me-0rc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="bc9-5d-y56" id="8pk-k7-1Td"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-245"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2.1.3.6" width="18" height="18"/>
+    </resources>
+</document>

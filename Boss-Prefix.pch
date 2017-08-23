@@ -1,0 +1,25 @@
+//
+//  JinghanLife-Prefix.pch
+//  JinghanLife
+//
+//  Created by 晶汉mac on 2016/12/30.
+//  Copyright © 2016年 jinghan. All rights reserved.
+//
+
+#ifndef JinghanLife_Prefix_pch
+#define JinghanLife_Prefix_pch
+#define  jinghan @"ddd"
+
+#import "BaseClassPublicHeader.h"
+
+#import "Constant.h"
+#import "CustomColor.h"
+#import "ImportDefine.h"
+#import "NotificationDefine.h"
+#import "YYText.h"
+#import "FyCalendarView.h"
+#import "JH_Menu.h"
+#import "JHCRM_LoadDataView.h"
+#import "JHBoss_UserWarpper.h"
+
+#endif /* JinghanLife_Prefix_pch */
